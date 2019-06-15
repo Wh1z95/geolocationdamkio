@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>geolocdamkio</title>
+</head>
+
+<body>
+
+    <h1>geolocdamkio</h1>
+    {% if localizations %}
+    <ul>
+        {% for localization in localizations %}
+        <li>
+            {{ localization.name }} : {{localization.distance}} 
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
